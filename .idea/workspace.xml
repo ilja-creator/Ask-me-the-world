@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a76a7576-a752-4d92-a1ae-597f04be0218" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ilja-creator"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ilja-creator/Ask-me-the-world.git",
+    "accountId": "aee9bda0-2730-4942-95d9-2628abba9369"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="39TYaYfpB5E3AtxHqOEXBmXO4Bt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.index.html.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.script.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "javascript.preferred.runtime.type.id": "node",
+    "last_opened_file_path": "C:/Users/schne/WebstormProjects/HTML/Ask-me-the-world/EUR",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "C:/Users/schne/AppData/Roaming/JetBrains/WebStorm2025.3/node/versions/24.13.0/node",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\schne\WebstormProjects\HTML\Ask-me-the-world\EUR" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\schne\WebstormProjects\HTML\Ask-me-the-world\GEN" />
+      <recent name="C:\Users\schne\WebstormProjects\HTML\Ask-me-the-world\Images" />
+      <recent name="C:\Users\schne\WebstormProjects\HTML\Ask-me-the-world\EUR" />
+      <recent name="C:\Users\schne\WebstormProjects\HTML\Österreich'sch-Quiz" />
+      <recent name="C:\Users\schne\WebstormProjects\Österreich'sch-Quiz\HTML" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.30387.83" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a76a7576-a752-4d92-a1ae-597f04be0218" name="Changes" comment="" />
+      <created>1770721594517</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770721594517</updated>
+      <workItem from="1770721595506" duration="12375000" />
+      <workItem from="1770826999081" duration="6174000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
