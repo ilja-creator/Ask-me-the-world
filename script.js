@@ -60,10 +60,10 @@ function print() {
 
 function check() {
     if (input.value.trim() === data[level - 1][1]) {
-        ans_status = "<span class='correct'>True</span>";
+        ans_status = "<span class='correct'>True!</span>";
         points += 1;
     } else {
-        ans_status = "<span class='wrong'>False</span>";
+        ans_status = `<span class='wrong'><b>False!</b> The right answer would have been <b>${data[level-1][1]}</b>.</span>`;
     }
 
     input.readOnly = true;
