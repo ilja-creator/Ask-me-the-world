@@ -26,6 +26,16 @@ get_data().then(() => {
     button_next.onclick = next;
 });
 
+input.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        if (!button_check.disabled) {
+            check();
+        } else if (!button_next.disabled) {
+            next();
+        }
+    }
+});
+
 function get_data() {
     let path = "countries.json";
 
