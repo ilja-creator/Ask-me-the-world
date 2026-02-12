@@ -13,7 +13,7 @@ const input = document.getElementById("answer");
 const output = document.getElementById("output");
 const button_check = document.getElementById("check");
 const button_next = document.getElementById("next");
-const con = document.getElementById("con").value;
+document.addEventListener("DOMContentLoaded", () => {});
 
 button_next.disabled = true;
 
@@ -27,14 +27,7 @@ get_data().then(() => {
 });
 
 function get_data() {
-    let path = "";
-
-    if (con === "Europa") {
-        path = "EUR/countries.json";
-    }
-    else if (con === "Asia") {
-        path = "ASI/countries.json";
-    }
+    let path = "countries.json";
 
     return fetch(path)
         .then(response => response.json())
