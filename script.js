@@ -36,6 +36,10 @@ input.addEventListener("keydown", function(e) {
     }
 });
 
+input.addEventListener("input", () => {
+    button_check.disabled = input.value.trim() === "";
+});
+
 function get_data() {
     let path = "countries.json";
 
