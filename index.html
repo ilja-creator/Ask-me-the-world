@@ -1,20 +1,21 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ask me the world!</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="GEN/style.css">
-    <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+    <title>Redirect</title>
 </head>
+
 <body>
-<div class="quiz-box">
 
-    <h1>Ask me the world!</h1>
-    <h2>Pleas select one choice option!</h2>
+<script>
+    const lang = navigator.language.startsWith("de") ? "de" : "en";
 
-    <button onclick="window.location.href='EUR/index.html'">Europa</button>
-    <button onclick="window.location.href='ASI/index.html'">Asia</button>
-    <button id="next">Available soon</button>
-</div>
-<script src="GEN/script.js" defer></script>
+    if (lang === "de") {
+        window.location.href = "GEN/index_de.html";
+    } else {
+        window.location.href = "GEN/index_en.html";
+    }
+</script>
+
 </body>
+</html>

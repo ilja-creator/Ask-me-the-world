@@ -41,7 +41,13 @@ input.addEventListener("input", () => {
 });
 
 function get_data() {
-    let path = "countries.json";
+    let path;
+
+    if (window.location.href.includes("index_de.html")) {
+        path = "countries_de.json";
+    } else {
+        path = "countries.json";
+    }
 
     return fetch(path)
         .then(response => response.json())
@@ -53,17 +59,31 @@ function get_data() {
 
 function print() {
     level_p.innerHTML = "Level: <b>" + level + "</b>";
-    points_p.innerHTML = "Points: <b>" + points + "/" + level + "</b>";
-    question.innerHTML = "Question: What's the capital city of <b>" + data[level - 1][0] + "</b>?";
-    output.innerHTML = "Your answer is: " + ans_status;
+    if (window.location.href.includes("index_de.html")) {
+        points_p.innerHTML = "Punkte: <b>" + points + "/" + level + "</b>";
+        question.innerHTML = "Frage: Was ist die Hauptstadt von <b>" + data[level - 1][0] + "</b>?";
+        output.innerHTML = "Ihre Antwort ist: " + ans_status;
+    } else {
+        points_p.innerHTML = "Points: <b>" + points + "/" + level + "</b>";
+        question.innerHTML = "Question: What's the capital city of <b>" + data[level - 1][0] + "</b>?";
+        output.innerHTML = "Your answer is: " + ans_status;
+    }
 }
 
 function check() {
     if (input.value.trim() === data[level - 1][1]) {
-        ans_status = "<span class='correct'>True!</span>";
+        if (window.location.href.includes("index_de.html")) {
+            ans_status = "<span class='correct'>Korrekt!</span>";
+        } else {
+            ans_status = "<span class='correct'>True!</span>";
+        }
         points += 1;
     } else {
-        ans_status = `<span class='wrong'><b>False!</b> The right answer would have been <b>${data[level-1][1]}</b>.</span>`;
+        if (window.location.href.includes("index_de.html")) {
+            ans_status = `<span class='wrong'><b>Falsch!</b> Die richtige Antwort wäre: <b>${data[level-1][1]}</b>.</span>`;
+        } else {
+            ans_status = `<span class='wrong'><b>False!</b> The right answer would have been <b>${data[level-1][1]}</b>.</span>`;
+        }
     }
 
     input.readOnly = true;
@@ -78,21 +98,29 @@ function next() {
         level += 1;
 
         if (level === max_level) {
-            level_p.textContent = "Finished";
-            question.textContent = "Congratulations! You finished the quiz!";
+            if (window.location.href.includes("index_de.html")) {
+                level_p.textContent = "Fertig!";
+                question.textContent = "Glückwunsch! Sie haben das Quiz beendet!";
+            }
+            else {
+                level_p.textContent = "Finished";
+                question.textContent = "Congratulations! You finished the quiz!";
+                }
             output.textContent = "";
             input.value = "";
+            input.placeholder = "";
             button_check.disabled = true;
             button_next.disabled = true;
             return;
         }
-
         input.readOnly = false;
         input.value = "";
         ans_status = "";
-        button_check.disabled = false;
+        button_check.disabled = true;
         button_next.disabled = true;
 
         print();
     }
 }
+
+button_check.disabled = true;
