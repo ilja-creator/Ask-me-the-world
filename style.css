@@ -16,6 +16,24 @@ h2 {
     font-style: italic;
 }
 
+input, textarea {
+    min-height: 30px;
+    max-height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 18px 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    border-radius: 40px;
+    min-height: 55px;
+}
+
 .correct {
     color: green;
     font-weight: bold;
@@ -27,7 +45,6 @@ h2 {
 .quiz-box {
     background: beige;
     padding: 25px;
-    border-radius: 12px;
     width: 100%;
     max-width: 350px;
     height: 100%;

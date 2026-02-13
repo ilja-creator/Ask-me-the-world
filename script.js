@@ -66,7 +66,7 @@ function print() {
 }
 
 function check() {
-    if (input.value.trim().toLowerCase() === data[level - 1][1]) {
+    if (input.value.trim().toLowerCase() === data[level - 1][1].toLowerCase()) {
         if (lang_de) {
             ans_status = "<span class='correct'>Korrekt!</span>";
         } else {
