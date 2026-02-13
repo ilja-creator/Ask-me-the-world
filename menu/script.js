@@ -1,4 +1,4 @@
-console.log("Script (GEN) is running.");
+console.log("Script (menu) is running.");
 
 const b_next = document.getElementById("next");
 

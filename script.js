@@ -41,13 +41,7 @@ input.addEventListener("input", () => {
 });
 
 function get_data() {
-    let path;
-
-    if (window.location.href.includes("index_de.html")) {
-        path = "countries_de.json";
-    } else {
-        path = "countries.json";
-    }
+    let path = "countries.json";
 
     return fetch(path)
         .then(response => response.json())
@@ -59,7 +53,7 @@ function get_data() {
 
 function print() {
     level_p.innerHTML = "Level: <b>" + level + "</b>";
-    if (window.location.href.includes("index_de.html")) {
+    if (navigator.language.startsWith("de")) {
         points_p.innerHTML = "Punkte: <b>" + points + "/" + level + "</b>";
         question.innerHTML = "Frage: Was ist die Hauptstadt von <b>" + data[level - 1][0] + "</b>?";
         output.innerHTML = "Ihre Antwort ist: " + ans_status;
@@ -72,14 +66,14 @@ function print() {
 
 function check() {
     if (input.value.trim() === data[level - 1][1]) {
-        if (window.location.href.includes("index_de.html")) {
+        if (navigator.language.startsWith("de")) {
             ans_status = "<span class='correct'>Korrekt!</span>";
         } else {
             ans_status = "<span class='correct'>True!</span>";
         }
         points += 1;
     } else {
-        if (window.location.href.includes("index_de.html")) {
+        if (navigator.language.startsWith("de")) {
             ans_status = `<span class='wrong'><b>Falsch!</b> Die richtige Antwort wäre: <b>${data[level-1][1]}</b>.</span>`;
         } else {
             ans_status = `<span class='wrong'><b>False!</b> The right answer would have been <b>${data[level-1][1]}</b>.</span>`;
@@ -98,7 +92,7 @@ function next() {
         level += 1;
 
         if (level === max_level) {
-            if (window.location.href.includes("index_de.html")) {
+            if (navigator.language.startsWith("de")) {
                 level_p.textContent = "Fertig!";
                 question.textContent = "Glückwunsch! Sie haben das Quiz beendet!";
             }
