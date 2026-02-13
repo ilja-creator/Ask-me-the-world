@@ -5,6 +5,7 @@ let max_level = null;
 let ans_status = "";
 let level = 1;
 let points = 0;
+let lang_de = window.location.href.endsWith('/de/')
 
 const level_p = document.getElementById("level_p");
 const points_p = document.getElementById("points");
@@ -53,7 +54,7 @@ function get_data() {
 
 function print() {
     level_p.innerHTML = "Level: <b>" + level + "</b>";
-    if (navigator.language.startsWith("de")) {
+    if (lang_de) {
         points_p.innerHTML = "Punkte: <b>" + points + "/" + level + "</b>";
         question.innerHTML = "Frage: Was ist die Hauptstadt von <b>" + data[level - 1][0] + "</b>?";
         output.innerHTML = "Ihre Antwort ist: " + ans_status;
@@ -66,14 +67,14 @@ function print() {
 
 function check() {
     if (input.value.trim().toLowerCase() === data[level - 1][1]) {
-        if (navigator.language.startsWith("de")) {
+        if (lang_de) {
             ans_status = "<span class='correct'>Korrekt!</span>";
         } else {
             ans_status = "<span class='correct'>True!</span>";
         }
         points += 1;
     } else {
-        if (navigator.language.startsWith("de")) {
+        if (lang_de) {
             ans_status = `<span class='wrong'><b>Falsch!</b> Die richtige Antwort wäre: <b>${data[level-1][1]}</b>.</span>`;
         } else {
             ans_status = `<span class='wrong'><b>False!</b> The right answer would have been <b>${data[level-1][1]}</b>.</span>`;
@@ -92,7 +93,7 @@ function next() {
         level += 1;
 
         if (level === max_level) {
-            if (navigator.language.startsWith("de")) {
+            if (lang_de) {
                 level_p.textContent = "Fertig!";
                 question.textContent = "Glückwunsch! Sie haben das Quiz beendet!";
             }
